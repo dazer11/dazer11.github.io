@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Projects/Calculators</title>
+    <link rel="stylesheet" href="styles2.css">
+  </head>
+  <body>
+	<script src="index.js"></script>
+
+   <h1>Simple Interest Calculator</h1>
+  <h3>Formula: A = P(1 + rt)</h3>
+    <label>Principle (P): $<input type="text" name="firstvalue1" id="firstvalue1"></label>
+    <br>
+    <br>
+    <label>Interest Rate (R): %<input type="text" name="secondvalue1" id="secondvalue1"></label>
+    <br>
+    <br>
+    <label>Time (T in years): </label><input type="text" name="thirdvalue1" id="thirdvalue1"></label>
+    <br>
+    <br>
+    <input type="button" name="add_btn" value="Calculate" id="add_btn" class="calculate2" >
+    <br>
+    <br>
+    <br> Total:<p id="show" ></p>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".calculate2").click(function(){
+            var firstvalue1=parseFloat($("#firstvalue1").val());
+            var secondvalue1=parseFloat($("#secondvalue1").val());
+            var thirdvalue1=parseFloat($("#thirdvalue1").val());
+            var total=(firstvalue1*(1+((secondvalue1*0.01)*thirdvalue1)));
+            $("#show").text(total.toFixed(2));
+        
+        });
+    });
+</script>
+    <br>
+    <br>
+ 
+    <h1>Compound Interest Calulator</h1>
+    <h3>Formula: A = P(1 + r/n)<sup>nt</sup></h3>
+    <h4>(Compounded Annually (N=12))</h4>
+    <label>Principle (P): $<input type="text" name="firstvalue" id="firstvalue"></label>
+    <br>
+    <br>
+    <label>Interest Rate (R): %<input type="text" name="secondvalue" id="secondvalue"></label>
+    <br>
+    <br>
+    <label>Time (T in years): </label><input type="text" name="thirdvalue" id="thirdvalue"></label>
+    <br>
+    <br>
+    <input type="button" name="add_btn" value="Calculate" id="add_btn" class="calculate">
+    <br>
+    <br>
+    <br> Total:<p id="show1"></p>
+    <br>
+    <br>
+    
+<script>
+    $(document).ready(function(){
+        $(".calculate").click(function(){
+            var firstvalue=parseFloat($("#firstvalue").val());
+            var secondvalue=parseFloat($("#secondvalue").val());
+            var thirdvalue=parseFloat($("#thirdvalue").val());
+            var total=(1+(secondvalue*0.01)/1)**(1*thirdvalue);
+            var finaltotal=(firstvalue*total)
+            $("#show1").text(finaltotal.toFixed(2));
+        
+        
+        });
+    });
+</script>
+
+<br>
+<br>
+<h1>Mortgage Calculator</h1>
+  <h3>Calculate Monthly Mortgage Payment</h3>
+  <h3>Formula: M = P[r(1 + r)<sup>t</sup>]/[(1 + r)<sup>t</sup> - 1]</h3>
+    <label>Mortgage Loan Amount (P): $<input type="text" name="firstvalue3" id="firstvalue3"></label>
+    <br>
+    <br>
+    <label>Interest Rate (R): %<input type="text" name="secondvalue3" id="secondvalue3"></label>
+    <br>
+    <br>
+    <label>Mortgage Term (T in years): </label><input type="text" name="thirdvalue3" id="thirdvalue3"></label>
+    <br>
+    <br>
+    <input type="button" name="add_btn" value="Calculate" id="add_btn" class="calculate5" >
+    <br>
+    <br>
+    <br> Monthly Payment:<p id="show4" ></p>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".calculate5").click(function(){
+            var firstvalue=parseFloat($("#firstvalue3").val());
+            var secondvalue=parseFloat($("#secondvalue3").val());
+            var thirdvalue=parseFloat($("#thirdvalue3").val());
+            
+            var total=((1+secondvalue/1200)**(thirdvalue*12));
+            var secondtotal=((secondvalue/1200)*total);
+            var thirdtotal=(secondtotal/(1-total));
+            var fourthtotal=(firstvalue*thirdtotal);
+            var finaltotal=(fourthtotal*(-1))
+            
+            
+            $("#show4").text("$" + finaltotal.toFixed(2));
+
+            
+            
+        
+        });
+    });
+</script>
+<br>
+<br>
+<h1>Return on Investment (ROI) Calulator</h1>
+    <h3>Formula: ROI = ((net fv - iv)/iv) &times; 100</h3>
+    <label>Initial Investment (iv): <input type="text" name="firstvalue6" id="firstvalue6"></label>
+    <br>
+    <br>
+    <label>Final Value (fv): <input type="text" name="secondvalue6" id="secondvalue6"></label>
+    <br>
+    <br>
+    <input type="button" name="add_btn" value="Calculate" id="add_btn" class="calculate6">
+    <br>
+    <br>
+    <br> Total:<p id="show6"></p>
+    <br>
+    <br>
+    
+<script>
+    $(document).ready(function(){
+        $(".calculate6").click(function(){
+            var firstvalue=parseFloat($("#firstvalue6").val());
+            var secondvalue=parseFloat($("#secondvalue6").val());
+            var total=(secondvalue-firstvalue);
+            var secondtotal=(total/firstvalue);
+            var finaltotal=(secondtotal*100);
+            $("#show6").text(finaltotal.toFixed(2)+ "%");
+        
+        
+        });
+    });
+</script>
+
+
+
+    </body>
+</html>
