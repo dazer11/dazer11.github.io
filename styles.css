@@ -1,11 +1,14 @@
 body{
   width: 100%;
   min-height: 100vh;
-  
-  background: rgb(34, 33, 33) 73%;
-  margin-right: auto;
-  
-
+  background: linear-gradient(
+    to right,
+    rgb(59, 57, 58) 0%,
+    rgb(34, 33, 33) 73%,
+    rgba(68, 168, 208, 0.861) 27%,
+    rgb(37, 38, 38) 100%
+  );
+    
   
   
   
@@ -16,72 +19,69 @@ body{
 h1 {
   font-family: Verdana;
   font-style: italic;
-  padding-left: 190px;
-  padding-top: -100px;
+  padding-left: 12vw;
+  
   color: white;
-  font-size: 50px
+  font-size: 3vw;
 }
 h2 {
   font-family: Verdana;
   font-style: italic;
-  padding-left: 349px;
-  margin-top: -48px;
+  padding-left: 21.56vw;
+  margin-top: -2.9vw;
   color: white;
-  font-size: 50px;
+  font-size: 3vw;
 }
   h3 {
     color: white;
     font-family: Monospace;
-    margin-right: auto;
-    font-size: 15px;
-    padding-left: 350px;
-    padding-right: 700px;
-    margin-top: 40px;
+    width: 30vw;
+    font-size: 1vw;
+    padding-left: 20vw;
+    
+    margin-top: 3vw;
     line-height: 1.6;
-    min-width: 400px
   }
   hr {
-    margin-left: 160px;
-    margin-right: 700px;
+    margin-left: 10vw;
+    padding-right: 35vw;
     border-radius: 100px;
-    min-width: 650px;
+    min-width: 40px;
     color: #44a8d0;
   }
   img {
-    margin-left: auto;
-    margin-top: -315px;
-    padding-left: 900px;
-    min-width: 100px;
-  -moz-box-shadow: 0px 6px 5px rgb(214, 38, 38);
+    margin-left: 60vw;
+    margin-top: -23vw;
+    -moz-box-shadow: 0px 6px 5px rgb(214, 38, 38);
   -webkit-box-shadow: 0px 6px 5px rgb(197, 49, 49);
-  box-shadow: 70px 10px 70px #44a8d061;
+  box-shadow: 0px 30px 50px #44a8d061;
   -moz-border-radius:190px;
   -webkit-border-radius:190px;
   border-radius:190px;
   }
   table {
-    margin-left: 680px;
-    margin-top: 60px;
+    margin-left: 45vw;
+    margin-top: 4vw;
   }
   h5 {
     color: white;
     font-family: verdana;
-    font-size: 30px;
+    font-size: 2vw;
   }
   fieldset {
     margin-top: 100px;
     border-color: rgb(68, 168, 208);
-    border-width: px;
     border-radius: 0px;
-    margin-left: 160px;
-    margin-right: 700px;
+    margin-left: 10vw;
+    margin-right: 46vw;
   }
   #show {
     color: white;
   }
   
    a {
-    font-size: 20px;
+    font-size: 2vw;
+    margin-left: 4vw;
     font-family:Verdana;
     color: white;
 
