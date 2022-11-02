@@ -12,11 +12,55 @@ background: linear-gradient(
   rgb(37, 38, 38) 100%);
 }
 input {
-width: 5vw; 
-height: 1vw;
-padding: .2em 1em;
+width: 6vw; 
+height: 1.5vw;
+min-height: 0.5vw;
+padding: 0.2vw;
+font-size: 1vw;
 
 }
+.calculate2 {
+width: 6vw;
+height: 1.5vw;
+min-height: 2vw;
+font-size: 1vw;
+padding: 0vw;
+}
+.calculate {
+  width: 6vw;
+  height: 1.5vw;
+  min-height: 2vw;
+  font-size: 1vw;
+  padding: 0vw;
+}
+.calculate2 {
+  width: 6vw;
+  height: 1.5vw;
+  min-height: 2vw;
+  font-size: 1vw;
+  padding: 0vw;
+  }
+.calculate2 {
+width: 6vw;
+height: 1.5vw;
+min-height: 2vw;
+font-size: 1vw;
+padding: 0vw;
+}
+.calculate5 {
+  width: 6vw;
+  height: 1.5vw;
+  min-height: 2vw;
+  font-size: 1vw;
+  padding: 0vw;
+  }
+  .calculate6 {
+    width: 6vw;
+    height: 1.5vw;
+    min-height: 2vw;
+    font-size: 1vw;
+    padding: 0vw;
+    }
 body {
   margin-left: 20vw;
   margin-top: 4vw;
